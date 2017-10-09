@@ -17,6 +17,10 @@ public class instantiate : MonoBehaviour {
         {
             Fire();
         }
+		if (Input.GetButtonDown ("Fire2"))
+		{
+			Application.LoadLevel (Application.loadedLevel);
+		}
 	}
 
     void Fire()
