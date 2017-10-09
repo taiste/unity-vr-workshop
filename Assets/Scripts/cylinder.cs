@@ -22,12 +22,13 @@ public class cylinder : MonoBehaviour {
         if(col.gameObject.tag == "Bullet")
         {
             InstantiateBullets();
+			Destroy(col.gameObject);
         }
     }
 
     void InstantiateBullets()
     {
-        for(int i = 0; i < 100; i++)
+        for(int i = 0; i < 10; i++)
         {
             Instantiate(bulletPrefab, new Vector3(-1, 2, -8), Quaternion.identity);
         }
